@@ -1,0 +1,105 @@
+0 info it worked if it ends with ok
+1 verbose cli [ '/usr/bin/node', '/usr/bin/npm', 'publish' ]
+2 info using npm@1.4.28
+3 info using node@v0.10.33
+4 verbose node symlink /usr/bin/node
+5 verbose publish [ '.' ]
+6 verbose cache add [ '.', null ]
+7 verbose cache add name=undefined spec="." args=[".",null]
+8 verbose parsed url { protocol: null,
+8 verbose parsed url   slashes: null,
+8 verbose parsed url   auth: null,
+8 verbose parsed url   host: null,
+8 verbose parsed url   port: null,
+8 verbose parsed url   hostname: null,
+8 verbose parsed url   hash: null,
+8 verbose parsed url   search: null,
+8 verbose parsed url   query: null,
+8 verbose parsed url   pathname: '.',
+8 verbose parsed url   path: '.',
+8 verbose parsed url   href: '.' }
+9 silly lockFile 3a52ce78- .
+10 verbose lock . /home/eric/.npm/3a52ce78-.lock
+11 verbose tar pack [ '/home/eric/.npm/pathTo/0.1.0/package.tgz', '.' ]
+12 verbose tarball /home/eric/.npm/pathTo/0.1.0/package.tgz
+13 verbose folder .
+14 info prepublish pathTo@0.1.0
+15 silly lockFile 1f1177db-tar tar://.
+16 verbose lock tar://. /home/eric/.npm/1f1177db-tar.lock
+17 silly lockFile 24d26bac-ric-npm-pathTo-0-1-0-package-tgz tar:///home/eric/.npm/pathTo/0.1.0/package.tgz
+18 verbose lock tar:///home/eric/.npm/pathTo/0.1.0/package.tgz /home/eric/.npm/24d26bac-ric-npm-pathTo-0-1-0-package-tgz.lock
+19 silly lockFile 1f1177db-tar tar://.
+20 silly lockFile 1f1177db-tar tar://.
+21 silly lockFile 24d26bac-ric-npm-pathTo-0-1-0-package-tgz tar:///home/eric/.npm/pathTo/0.1.0/package.tgz
+22 silly lockFile 24d26bac-ric-npm-pathTo-0-1-0-package-tgz tar:///home/eric/.npm/pathTo/0.1.0/package.tgz
+23 silly lockFile cc8792f4-me-eric-npm-pathTo-0-1-0-package /home/eric/.npm/pathTo/0.1.0/package
+24 verbose lock /home/eric/.npm/pathTo/0.1.0/package /home/eric/.npm/cc8792f4-me-eric-npm-pathTo-0-1-0-package.lock
+25 silly lockFile cc8792f4-me-eric-npm-pathTo-0-1-0-package /home/eric/.npm/pathTo/0.1.0/package
+26 silly lockFile cc8792f4-me-eric-npm-pathTo-0-1-0-package /home/eric/.npm/pathTo/0.1.0/package
+27 silly lockFile 3a52ce78- .
+28 silly lockFile 3a52ce78- .
+29 silly publish { name: 'pathTo',
+29 silly publish   version: '0.1.0',
+29 silly publish   description: 'A simple abstraction to identify the path and request your files and folders in a Node.js project',
+29 silly publish   main: 'index.js',
+29 silly publish   scripts: { test: 'make test' },
+29 silly publish   repository: { type: 'git', url: 'https://github.com/thothJS/pathTo.git' },
+29 silly publish   keywords: [ 'pathTo', 'path', 'nodepath', 'require' ],
+29 silly publish   author:
+29 silly publish    { name: 'Eric Douglas',
+29 silly publish      email: 'eric.eoop@gmail.com',
+29 silly publish      url: 'https://github.com/ericdouglas' },
+29 silly publish   license: 'MIT',
+29 silly publish   bugs: { url: 'https://github.com/thothJS/pathTo/issues' },
+29 silly publish   homepage: 'https://github.com/thothJS/pathTo',
+29 silly publish   devDependencies: { chai: '^1.10.0', mocha: '^2.1.0' },
+29 silly publish   readme: '# pathTo\n\nA simple abstraction to identify the path and request your files and folders in a Node.js project.\n\n## Installation\n\n```sh\nnpm install pathTo --save\n```\n\n## Usage\n\n**Without** `pathTo` module:\n\n```js\n\nvar dep1 = require( \'../../../../file\' );\nvar dep2 = require( \'../../../../../../folder\' );\nvar dep3 = require( \'../../../folder\' );\nvar dep4 = require( \'../../../another-folder\' );\n\n```\n\n**With** `pathTo` module:\n\n```js\n\nvar path = require( \'pathTo\' );\n\nvar dep1 = require( path( 4, \'file\' ));\nvar dep2 = require( path( 6, \'folder\' ));\nvar dep3 = require( path( 3, \'folder\' ));\nvar dep4 = require( path( 3, \'another-folder\' ));\n\n```\n\nIf you want to use just the `../../../` abstraction, you could use the `pathTo` in that manner:\n\n```js\n\nvar path = require( \'pathTo\' )( 4 );\n\nvar dep1 = require( path + \'file\' );\nvar dep2 = require( path + \'folder\' );\nvar dep4 = require( path + another-folder\' );\n\n```\n\n## Contributing\n\n* Take care to maintain the existing coding style.\n* Add unit tests for any new or changed functionality. \n* Lint and test your code.\n\n## Release History\n\n* 0.1.0 Initial release\n',
+29 silly publish   readmeFilename: 'README.md',
+29 silly publish   gitHead: 'a090254eeb624962c7c82e5a6fae62817a8fab38',
+29 silly publish   _id: 'pathTo@0.1.0',
+29 silly publish   _shasum: '24b221f4bec83b9f35d4f8d47de0f67a9ab72f29',
+29 silly publish   _from: '.' }
+30 verbose request where is /pathTo
+31 verbose request registry https://registry.npmjs.org/
+32 verbose request id 501a45e884df53fd
+33 verbose url raw /pathTo
+34 verbose url resolving [ 'https://registry.npmjs.org/', './pathTo' ]
+35 verbose url resolved https://registry.npmjs.org/pathTo
+36 verbose request where is https://registry.npmjs.org/pathTo
+37 info trying registry request attempt 1 at 16:02:02
+38 http PUT https://registry.npmjs.org/pathTo
+39 http 403 https://registry.npmjs.org/pathTo
+40 verbose headers { date: 'Wed, 24 Dec 2014 18:02:04 GMT',
+40 verbose headers   server: 'CouchDB/1.5.0 (Erlang OTP/R16B03)',
+40 verbose headers   'content-type': 'application/json',
+40 verbose headers   'cache-control': 'max-age=60',
+40 verbose headers   'content-length': '76',
+40 verbose headers   'accept-ranges': 'bytes',
+40 verbose headers   via: '1.1 varnish',
+40 verbose headers   'x-served-by': 'cache-iad2144-IAD',
+40 verbose headers   'x-cache': 'MISS',
+40 verbose headers   'x-cache-hits': '0',
+40 verbose headers   'x-timer': 'S1419444123.767139,VS0,VE327',
+40 verbose headers   'keep-alive': 'timeout=10, max=50',
+40 verbose headers   connection: 'Keep-Alive' }
+41 error publish Failed PUT 403
+42 error Error: forbidden New packages must have all-lowercase names: pathTo
+42 error     at RegClient.<anonymous> (/usr/lib/node_modules/npm/node_modules/npm-registry-client/lib/request.js:308:14)
+42 error     at Request._callback (/usr/lib/node_modules/npm/node_modules/npm-registry-client/lib/request.js:246:65)
+42 error     at Request.self.callback (/usr/lib/node_modules/npm/node_modules/request/request.js:236:22)
+42 error     at Request.emit (events.js:98:17)
+42 error     at Request.<anonymous> (/usr/lib/node_modules/npm/node_modules/request/request.js:1142:14)
+42 error     at Request.emit (events.js:117:20)
+42 error     at IncomingMessage.<anonymous> (/usr/lib/node_modules/npm/node_modules/request/request.js:1096:12)
+42 error     at IncomingMessage.emit (events.js:117:20)
+42 error     at _stream_readable.js:943:16
+42 error     at process._tickCallback (node.js:419:13)
+43 error If you need help, you may report this *entire* log,
+43 error including the npm and node versions, at:
+43 error     <http://github.com/npm/npm/issues>
+44 error System Linux 3.13.0-24-generic
+45 error command "/usr/bin/node" "/usr/bin/npm" "publish"
+46 error cwd /home/eric/github/thothjs/pathTo
+47 error node -v v0.10.33
+48 error npm -v 1.4.28
+49 verbose exit [ 1, true ]
