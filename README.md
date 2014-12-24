@@ -50,7 +50,7 @@ var dep4 = require( path + another-folder' );
 
 You could look at [this](https://github.com/ericdouglas/labs/tree/master/nodejs/practice/006) folder to see a *working* example.
 
-In [app.js](https://github.com/ericdouglas/labs/blob/master/nodejs/practice/006/some/folder/here/app.js) file, we loaded the `path-to` module and use it in two different forms.
+In [app.js](https://github.com/ericdouglas/labs/blob/master/nodejs/practice/006/some/folder/here/app.js) file, we loaded the `path-to` module and used it in two different forms.
 
 ## Contributing
 
