@@ -42,7 +42,7 @@ var path = require( 'path-to' )( 4 );
 
 var dep1 = require( path + 'file' );
 var dep2 = require( path + 'folder' );
-var dep4 = require( path + another-folder' );
+var dep4 = require( path + 'another-folder' );
 
 ```
 
