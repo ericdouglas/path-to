@@ -52,6 +52,12 @@ You could look at [this](https://github.com/ericdouglas/labs/tree/master/nodejs/
 
 In [app.js](https://github.com/ericdouglas/labs/blob/master/nodejs/practice/006/some/folder/here/app.js) file, we loaded the `path-to` module and used it in two different forms.
 
+## Tests
+
+```sh
+npm test
+```
+
 ## Contributing
 
 * Take care to maintain the existing coding style.
