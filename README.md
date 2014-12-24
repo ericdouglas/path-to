@@ -10,7 +10,7 @@ npm install pathTo --save
 
 ## Usage
 
-**Without** `pathTo` module;
+**Without** `pathTo` module:
 
 ```js
 
@@ -21,7 +21,7 @@ var dep4 = require( '../../../another-folder' );
 
 ```
 
-**With** `pathTo` module
+**With** `pathTo` module:
 
 ```js
 
@@ -31,5 +31,17 @@ var dep1 = require( path( 4, 'file' ));
 var dep2 = require( path( 6, 'folder' ));
 var dep3 = require( path( 3, 'folder' ));
 var dep4 = require( path( 3, 'another-folder' ));
+
+```
+
+If you want to use just the `../../../` abstraction, you could use the `pathTo` in that manner:
+
+```js
+
+var path = require( 'pathTo' )( 4 );
+
+var dep1 = require( path + 'file' );
+var dep2 = require( path + 'folder' );
+var dep4 = require( path + another-folder' );
 
 ```
