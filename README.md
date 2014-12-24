@@ -1,16 +1,16 @@
-# pathTo
+# path-to
 
 A simple abstraction to identify the path and request your files and folders in a Node.js project.
 
 ## Installation
 
 ```sh
-npm install pathTo --save
+npm install path-to --save
 ```
 
 ## Usage
 
-**Without** `pathTo` module:
+**Without** `path-to` module:
 
 ```js
 
@@ -21,11 +21,11 @@ var dep4 = require( '../../../another-folder' );
 
 ```
 
-**With** `pathTo` module:
+**With** `path-to` module:
 
 ```js
 
-var path = require( 'pathTo' );
+var path = require( 'path-to' );
 
 var dep1 = require( path( 4, 'file' ));
 var dep2 = require( path( 6, 'folder' ));
@@ -34,11 +34,11 @@ var dep4 = require( path( 3, 'another-folder' ));
 
 ```
 
-If you want to use just the `../../../` abstraction, you could use the `pathTo` in that manner:
+If you want to use just the `../../../` abstraction, you could use the `path-to` in that manner:
 
 ```js
 
-var path = require( 'pathTo' )( 4 );
+var path = require( 'path-to' )( 4 );
 
 var dep1 = require( path + 'file' );
 var dep2 = require( path + 'folder' );
