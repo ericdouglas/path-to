@@ -25,6 +25,8 @@ var dep4 = require( '../../../another-folder' );
 
 ```js
 
+var path = require( 'pathTo' );
+
 var dep1 = require( path( 4, 'file' ));
 var dep2 = require( path( 6, 'folder' ));
 var dep3 = require( path( 3, 'folder' ));
