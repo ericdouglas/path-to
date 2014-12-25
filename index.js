@@ -17,6 +17,6 @@ function pathToHandler(level, archive) {
     out = path.resolve(level, archive);
   }
   
-  return out
+  return out;
 }
 module.exports = pathToHandler;
