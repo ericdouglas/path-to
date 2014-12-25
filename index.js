@@ -4,12 +4,14 @@
 * @param {Number} level
 * @param {String} archive
 */
-module.exports = function( level, archive ) {
-
-  var local = new Array( level + 1 ).join( '../' );
-
-  if ( archive ) return local + archive;
+function pathToHandler(level, archive) {
+  var path = require('path');
+  var out = null;
   
-  return local;
-
-};
+  level = level ? new Array(level + 1).join('../') : '../';
+  archive = archive || '';
+  out = path.resolve(level, archive);
+  
+  return out
+}
+module.exports = pathToHandler;
