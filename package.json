@@ -1,6 +1,6 @@
 {
   "name": "path-to",
-  "version": "0.1.3",
+  "version": "0.1.4",
   "description": "A simple abstraction to identify the path and request your files and folders in a Node.js project",
   "main": "index.js",
   "scripts": {
