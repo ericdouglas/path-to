@@ -16,12 +16,12 @@
     "nodepath",
     "require"
   ],
-  "author": "Eric Douglas <eric.eoop@gmail.com> (https://github.com/ericdouglas)",
+  "author": "Eric Douglas <eric.douglas.mail@gmail.com> (https://github.com/ericdouglas)",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/thothJS/pathTo/issues"
+    "url": "https://github.com/thothJS/path-to/issues"
   },
-  "homepage": "https://github.com/thothJS/pathTo",
+  "homepage": "https://github.com/thothJS/path-to",
   "devDependencies": {
     "chai": "^1.10.0",
     "coveralls": "^2.11.2",
