@@ -19,3 +19,6 @@ function testHandler() {
 }
 gulp
   .task('test', testHandler);
+
+gulp
+  .task('default', ['lint', 'test']);
