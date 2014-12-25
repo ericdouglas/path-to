@@ -1,8 +1,10 @@
 /*
+*
 * Return the correct path to your file or folder informed
 *
 * @param {Number} level
 * @param {String} archive
+*
 */
 
 function pathToHandler( level, archive ) {
