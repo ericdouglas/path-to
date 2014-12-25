@@ -1,21 +1,17 @@
 var expect = require( 'chai' ).expect;
-var path   = require( '../index' );
-var path3  = require( '../index' )( 3 );
+var path = require('path');
+var pathTo   = require( '../index' );
 
-describe( '#pathTo', function() {
-  it( 'create a 5lvl path to app.js file', function() {
-    expect( path( 5, 'app' )).to.equal( '../../../../../app' );
+describe('Module pathTo', function () {
+  it('should be create an path resolved with five up levels', function () {
+    expect(pathTo(5, 'app')).to.equal(path.resolve('../../../../../app'));
   });
 
-  it( 'create a 3lvl path without a file or folder name', function() {
-    expect( path( 3 )).to.equal( '../../../' );
+  it('should be return null if the two arguments was not filled', function () {
+    expect(pathTo('app')).to.be.a('null');
   });
 
-  it( 'also create a 3lvl path without a file or folder name', function() {
-    expect( path3 ).to.equal( '../../../' );
-  });
-
-  it( 'create a 3lvl path with a app.js file name', function() {
-    expect( path3 + 'app' ).to.equal( '../../../app' );
+  it('should be return just the resolved path', function () {
+    expect(pathTo(2)).to.be.eql(path.resolve('../../'));
   });
 });
