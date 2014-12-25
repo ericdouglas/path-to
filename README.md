@@ -1,10 +1,7 @@
 # path-to
 
-## Status
-
 [![Build Status](https://travis-ci.org/thothJS/path-to.svg?branch=master)](https://travis-ci.org/fth-ship/path-to)
-
-[![Coverage Status](https://coveralls.io/repos/fth-ship/path-to/badge.png)](https://coveralls.io/r/fth-ship/path-to)
+[![Coverage Status](https://coveralls.io/repos/thothJS/path-to/badge.png)](https://coveralls.io/r/thothJS/path-to)
 
 ## Description
 
