@@ -4,6 +4,8 @@
 
 [![Build Status](https://travis-ci.org/fth-ship/path-to.svg?branch=master)](https://travis-ci.org/fth-ship/path-to)
 
+[![Coverage Status](https://coveralls.io/repos/fth-ship/path-to/badge.png)](https://coveralls.io/r/fth-ship/path-to)
+
 ## Description
 
 A simple abstraction to identify the path and request your files and folders in a Node.js project.
