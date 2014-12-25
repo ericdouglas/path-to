@@ -1,5 +1,11 @@
 # path-to
 
+## Status
+
+[![Build Status](https://travis-ci.org/fth-ship/path-to.svg?branch=master)](https://travis-ci.org/fth-ship/path-to)
+
+## Description
+
 A simple abstraction to identify the path and request your files and folders in a Node.js project.
 
 ## Installation
