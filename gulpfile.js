@@ -1,8 +1,8 @@
-var gulp = require('gulp');
-var jshint = require('gulp-jshint');
+var gulp    = require('gulp');
+var jshint  = require('gulp-jshint');
 var stylish = require('jshint-stylish');
-var mocha = require('gulp-mocha');
-var shell = require('gulp-shell');
+var mocha   = require('gulp-mocha');
+var shell   = require('gulp-shell');
 
 function lintHandler() {
   return gulp

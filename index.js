@@ -5,7 +5,7 @@
 * @param {String} archive
 */
 
-function pathToHandler(level, archive) {
+function pathToHandler( level, archive ) {
   var path = require( 'path' );
   var out = null;
   var args = Array.prototype.slice.call( arguments, [] );
