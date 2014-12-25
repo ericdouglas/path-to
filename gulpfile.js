@@ -1,6 +1,7 @@
 var gulp = require('gulp');
 var jshint = require('gulp-jshint');
 var stylish = require('jshint-stylish');
+var mocha = require('gulp-mocha');
 
 function lintHandler() {
   return gulp
@@ -10,3 +11,11 @@ function lintHandler() {
 }
 gulp
   .task('lint', lintHandler);
+
+function testHandler() {
+  return gulp
+           .src(['./test/*.js'])
+           .pipe(mocha({ reporter: 'spec' }));
+}
+gulp
+  .task('test', testHandler);
