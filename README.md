@@ -3,6 +3,8 @@
 [![Build Status](https://travis-ci.org/thothJS/path-to.svg?branch=master)](https://travis-ci.org/thothJS/path-to)
 [![Coverage Status](https://coveralls.io/repos/thothJS/path-to/badge.png)](https://coveralls.io/r/thothJS/path-to)
 
+[![NPM](https://nodei.co/npm/path-to.png?downloads=true&downloadRank=true&stars=true)](https://nodei.co/npm/path-to/)
+
 ## Description
 
 A simple abstraction to identify the path and request your files and folders in a Node.js project.
